@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>HTML基本-課題2</title>
+</head>
+<body>
+<table border="1">
+<tbody>
+<tr>
+    <th>項目名</th>
+    <th>入力項目</th>
+</tr>
+<tr>
+    <td>名前</td>
+    <td><input type="text" name="fullname" value="テキスト入力欄" size="30"></td>
+</tr>
+<tr>
+    <td>パスワード</td>
+    <td><input type="password" name="password" value="password" size="30"></td>
+</tr>
+<tr>
+    <td>メッセージ</td>
+    <td><textarea cols="30" rows="5" name="message">複数行のテキスト入力欄</textarea></td>
+</tr>
+<tr>
+    <td>性別</td>
+    <td>
+        <input type="radio" name="sex" value="1" checked="checked">男性　
+        <input type="radio" name="sex" value="2">女性
+    </td>
+</tr>
+<tr>
+    <td>趣味</td>
+    <td>
+        <input type="checkbox" name="hobby" value="1" checked="checked">スポーツ　
+        <input type="checkbox" name="hobby" value="2">読書　
+        <input type="checkbox" name="hobby" value="3">なし
+    </td>
+</tr>
+<tr>
+    <td>職業</td>
+    <td>
+    <select name="job"> 
+        <option value="1">PG</option>
+        <option value="2">SE</option>
+        <option value="3">PM</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td>好きな果物</td>
+    <td>
+    <select name="favorite" size="5" multiple="multiple"> 
+        <option value="1">りんご</option>
+        <option value="2">バナナ</option>
+        <option value="3">いちご</option>
+        <option value="4">メロン</option>
+        <option value="5">オレンジ</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td>ファイル選択</td>
+    <td><input type="file" name="attach_file" size="30"></td>
+</tr>
+<tr>
+    <td>非表示データ</td>
+    <td>
+    <input type="hidden" name="user_id" value="ecorange"><br>（画面上には表示されません）
+    </td>
+</tr>
+<tr>
+    <td>送信・リセットボタン</td>
+    <td>
+    <input type="submit" value="送信する"> 
+    <input type="reset" value="リセット">
+    </td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
